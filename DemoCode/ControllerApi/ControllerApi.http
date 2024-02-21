@@ -1,0 +1,6 @@
+@ControllerApi_HostAddress = http://localhost:5062
+
+GET {{ControllerApi_HostAddress}}/people/
+Accept: application/json
+
+###
