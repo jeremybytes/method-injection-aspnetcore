@@ -12,7 +12,7 @@ public class PeopleController : ControllerBase
 
     [HttpGet(Name = "GetPeople")]
     public async Task<IEnumerable<Person>> Get(
-        [FromServices] IPeopleProvider provider)
+        IPeopleProvider provider)
     {
         return await provider.GetPeople();
     }
